@@ -32,16 +32,15 @@
 <!-- will be copied to the resulting head //-->
 </head>
 <body>
-<audio id="background-music" autoplay loop>
+<audio id="background-music" autoplay loop volume="0.1">
         <source src="music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
-    </audio>
-    <script>
-        document.getElementById('background-music').play();
-    </script>
+</audio>
+
 <script>
-  var audio = document.getElementById('background-music');
-  audio.volume = 0.3;
+    var audio = document.getElementById('background-music');
+    audio.volume = 0.5; // Set the volume to 50%
+    audio.play(); // Ensure the audio is playing
 </script>
 	
 	<script src="patch/js/poki-master-loader.js"></script>
